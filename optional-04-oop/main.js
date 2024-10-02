@@ -7,7 +7,7 @@ const inventaris = new Inventory();
 const item1 = new Item(1, 'Laptop', 10, 1000);
 const item2 = new Item(2, 'Mouse', 50, 20);
 
-// Menambahkan item ke dalam inventaris
+// Menambahkan item ke dalam inventari
 inventaris.addItem(item1);
 inventaris.addItem(item2);
 
