@@ -1,18 +1,18 @@
-import Item from './Item.js';
-import Inventory from './Inventory.js';
+import Item from "./Item.js";
+import Inventory from "./Inventory.js";
 
 const inventaris = new Inventory();
 
 // Membuat item baru
-const item1 = new Item(1, 'Laptop', 10, 1000);
-const item2 = new Item(2, 'Mouse', 50, 20);
+const item1 = new Item(1, "Laptop", 10, 1000);
+const item2 = new Item(2, "Mouse", 50, 20);
 
-// Menambahkan item ke dalam inventari
+// Menambahkan item ke dalam inventaris
 inventaris.addItem(item1);
 inventaris.addItem(item2);
 
 // Menampilkan inventaris awal
-console.log('Inventaris Awal:');
+console.log("Inventaris Awal:");
 console.log(inventaris.listItems());
 /**
  * Output yang diharapkan:
@@ -22,8 +22,8 @@ console.log(inventaris.listItems());
  */
 
 // Memperbarui detail item1
-item1.updateDetails('Laptop', 8, 950);
-console.log('\nInventaris setelah pembaruan:');
+item1.updateDetails("Laptop", 8, 950);
+console.log("\nInventaris setelah pembaruan:");
 console.log(inventaris.listItems());
 
 /**
@@ -35,7 +35,7 @@ console.log(inventaris.listItems());
 
 // Menghapus item2 dari inventaris
 inventaris.removeItem(2);
-console.log('\nInventaris setelah penghapusan:');
+console.log("\nInventaris setelah penghapusan:");
 console.log(inventaris.listItems());
 
 /**
